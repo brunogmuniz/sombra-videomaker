@@ -1,0 +1,48 @@
+<section id="parceiros" >
+
+  <h2 class="parceiros__titulo" >ASSINANTES</h2>
+  <p class="parceiros__subtitulo">(CLIQUE NO CARD PARA SABER MAIS)</p>
+
+  <div class="parceiros__cards" >
+
+    <a
+      class="parceiros__card"
+      data-aos="custom-card"
+      [attr.data-aos-delay]="i * 300"
+      *ngFor="let p of parceiros; let i = index"
+      [href]="p.link"
+      target="_blank"
+    >
+
+      <div class="parceiros__aspas">
+        <img src="assets/aspas.svg" alt="" class="aspas">
+      </div>
+      <!-- Estrelas -->
+      <div class="parceiros__stars">
+        <span *ngFor="let star of [].constructor(p.rating)">★</span>
+      </div>
+
+      <!-- Descrição -->
+      <p class="parceiros__descricao">
+        "{{ p.descricao }}"
+      </p>
+
+      <!-- Footer -->
+      <div class="parceiros__footer">
+        <img
+          [src]="p.imagem"
+          [alt]="p.nome"
+          class="parceiros__logo"
+        />
+
+        <div>
+          <h3 class="parceiros__nome">{{ p.nome }}</h3>
+          <p class="parceiros__role">{{ p.role }}</p>
+        </div>
+      </div>
+
+    </a>
+
+  </div>
+
+</section>

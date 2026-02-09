@@ -1,0 +1,146 @@
+section#parceiros {
+  background-color: #161a1d;
+  color: white;
+  font-family: Tahoma, sans-serif;
+  padding: 80px 100px;
+  text-align: center;
+}
+
+/* TITULOS */
+
+.parceiros__titulo {
+  font-size: 48px;
+  color: #dedede;
+  margin-bottom: 10px;
+}
+
+.parceiros__subtitulo {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+
+.parceiros__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 0 auto;
+}
+
+/* CARD */
+
+.parceiros__card {
+  display: block;
+  background: #1c2124;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 30px 25px;
+  border-radius: 16px;
+  text-align: left;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.parceiros__card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.parceiros__stars {
+  color: #FF9F1C;
+  font-size: 25px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.parceiros__aspas{
+  color: #FF9F1C;
+  width: 55px;
+  height: 55px;
+
+}
+
+.aspas{
+  width: 30px;
+  height: 30px;
+}
+.parceiros__descricao {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+
+.parceiros__footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+
+.parceiros__logo {
+  width: 75px;
+  height: 75px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: #111;
+  padding: 4px;
+}
+
+
+
+.parceiros__nome {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.parceiros__role {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0;
+}
+
+
+
+@media (max-width: 1024px) {
+  section#parceiros {
+    padding: 60px 40px;
+  }
+
+  .parceiros__titulo {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  section#parceiros {
+    padding: 40px 20px;
+  }
+
+  .parceiros__cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+[data-aos="custom-card"] {
+  opacity: 0;
+  transform: translateY(20px) scale(0.985);
+  transition-property: transform, opacity;
+}
+
+[data-aos="custom-card"].aos-animate {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition-duration: 1400ms;
+  transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+}
+

@@ -1,0 +1,142 @@
+
+
+#servicos {
+  background-color: #161a1d;
+  padding: 100px 80px;
+  text-align: center;
+  color: white;
+}
+
+/* TÍTULO */
+
+.servicos__titulo {
+  font-size: 42px;
+  margin-bottom: 60px;
+  font-family: Tahoma, sans-serif;
+  letter-spacing: 2px;
+  color: #dedede;
+}
+
+/* GRID */
+
+.servicos__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD */
+
+.servico__card {
+  background: #1c2124;
+  padding: 40px 30px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.servico__card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ÍCONE */
+
+.servico__icon {
+  width: 55px;
+  height: 55px;
+
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  padding: 5px;
+}
+.card__box {
+  background-color: #161a1d;
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+
+/* TÍTULO CARD */
+
+.servico__card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* DESCRIÇÃO */
+
+.servico__card p {
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.servico__topicos {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+.servico__topicos li {
+  margin-bottom: 6px;
+}
+.servico__topicos li::marker {
+  color: #FF9F1C;
+  font-size: 1em;
+}
+
+
+@media (max-width: 1024px) {
+  #servicos {
+    padding: 80px 40px;
+  }
+
+  .servicos__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #servicos {
+    padding: 60px 20px;
+  }
+
+  .servicos__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .servico__card {
+    text-align: center;
+  }
+}
+
+[data-aos="custom-card"] {
+  opacity: 0;
+  transform: translateY(20px) scale(0.985);
+  transition-property: transform, opacity;
+}
+
+[data-aos="custom-card"].aos-animate {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition-duration: 1400ms;
+  transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
