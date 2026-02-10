@@ -1,0 +1,220 @@
+section#about {
+  background-color: #161a1d;
+  color: white;
+  font-family: Tahoma, sans-serif;
+  padding: 80px 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__titulo {
+  font-size: 48px;
+  color: #dedede;
+  margin-bottom: 10px;
+}
+
+.about__card {
+  display: flex;
+  width: 60%;
+  height: 50vh;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 30px 25px;
+  text-align: left;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.about__card-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.about__card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+.about__card-image img:hover {
+  transform: scale(1.02);
+}
+
+.about__card-text {
+  flex: 1;
+  padding: 20px;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Tahoma, sans-serif;
+  text-align: left;
+}
+
+.greeting {
+  display: block;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.about__card-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 800;
+}
+
+.highlight {
+  color: #ff9f1c;
+}
+
+.role {
+  color: #FF9F1C;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.about__card-text p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: start;
+}
+
+.contact-pill {
+  background-color: #FF9F1C;
+  color: #161a1d;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.contact-pill:hover {
+  background-color: #FF9F1C;
+  transform: translateY(-2px);
+}
+
+.glow-circle {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 2px solid #FF9F1C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgb(255, 159, 28),
+  inset 0 0 20px rgba(248, 161, 124, 0.4);
+}
+
+.glow-circle::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgb(255, 159, 28) 0%, transparent 70%);
+  z-index: 1;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  filter: grayscale(20%);
+  object-position: top left;
+}
+
+/* ================== MEDIA QUERIES ================== */
+
+@media (max-width: 1024px) {
+  section#about {
+    padding: 60px 50px;
+  }
+
+  .about__titulo {
+    font-size: 36px;
+  }
+
+  .about__card {
+    width: 80%;
+    height: auto;
+  }
+  .contact-grid {
+    display: none;
+  }
+  .about__card-text h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__card {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+  }
+
+  .about__card-image {
+    display: none; /* Esconde imagem no celular */
+  }
+
+  .about__card-text {
+    flex: none;
+    width: 100%;
+    padding: 15px;
+    text-align: center; /* Centraliza texto no celular */
+  }
+
+  .about__card-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .about__card-text p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section#about {
+    padding: 40px 20px;
+  }
+
+  .about__titulo {
+    font-size: 28px;
+  }
+
+  .contact-grid {
+    display: none;
+  }
+
+  .contact-pill {
+    width: 50%;
+    justify-content: center;
+  }
+}

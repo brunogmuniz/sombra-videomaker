@@ -1,4 +1,5 @@
 import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import Typed from 'typed.js';
 
 @Component({
   selector: 'app-hero',
@@ -6,32 +7,21 @@ import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/
   templateUrl: './hero.html',
   styleUrl: './hero.css',
 })
-export class Hero implements AfterViewInit {
-  @ViewChild('word') wordElement!: ElementRef;
-
-  palavras = ['AUTÊNTICO', 'OUSADO', 'IMPACTANTE', 'ORIGINAL'];
-  index = 0;
+export class Hero {
 
   ngAfterViewInit() {
-    this.loopAnimation();
+    const palavras = ['AUTÊNTICO', 'OUSADO', 'IMPACTANTE', 'ORIGINAL'];
+
+    new Typed('.text-gradient', {
+      strings: palavras,
+      typeSpeed: 80,
+      backSpeed: 50,
+      backDelay: 1500,
+      loop: true,
+      showCursor: true,
+      cursorChar: '|',
+    });
   }
 
-  loopAnimation() {
-    const el = this.wordElement.nativeElement;
 
-    setInterval(() => {
-
-      el.style.backgroundPosition = "0%";
-
-      setTimeout(() => {
-        el.style.backgroundPosition = "100%";
-      }, 3000);
-
-      setTimeout(() => {
-        this.index = (this.index + 1) % this.palavras.length;
-        el.textContent = this.palavras[this.index];
-      }, 4000);
-
-    }, 6000);
-  }
 }

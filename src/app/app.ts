@@ -6,17 +6,21 @@ import { Hero } from './components/hero/hero';
 import {Parceiros} from './components/parceiros/parceiros';
 import {Services} from './components/services/services';
 import {Footer} from './components/footer/footer';
+import {Loader} from './components/loader/loader';
+import { trigger, transition, style, animate } from '@angular/animations';
+
 
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent, Hero, Parceiros, Services, Footer],
+  standalone: true,
+  imports: [
+    RouterOutlet,
+  ],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css'],
+
 })
 export class App implements AfterViewInit {
-
-  protected readonly title = signal('sombra-app');
-
   ngAfterViewInit() {
     AOS.init({
       duration: 800,

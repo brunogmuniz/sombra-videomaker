@@ -9,28 +9,28 @@
   position: relative;
 }
 .text-gradient {
-  font-family: Tahoma, sans-serif;
-  font-weight: 600;
+   font-family: Tahoma, sans-serif;
+   font-weight: 600;
 
-  background: linear-gradient(
-    90deg,
-    #FF9F1C 0%,
-    #FF9F1C 30%,
-    #111111 40%,
-    #000000 50%,
-    #111111 60%,
-    #FF9F1C 75%,
-    #FF9F1C 100%
-  );
+   background: linear-gradient(
+     90deg,
+     #FF9F1C 0%,
+     #FF9F1C 30%,
+     #111111 40%,
+     #000000 50%,
+     #111111 60%,
+     #FF9F1C 75%,
+     #FF9F1C 100%
+   );
 
-  background-size: 400% 100%;
-  background-position: 0% 0%;
+   background-size: 400% 100%;
+   background-position: 0% 0%;
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 
-  transition: background-position 1.4s cubic-bezier(0.76, 0, 0.24, 1);
-}
+   transition: background-position 1.4s cubic-bezier(0.76, 0, 0.24, 1);
+ }
 
 
   .hero::before {
