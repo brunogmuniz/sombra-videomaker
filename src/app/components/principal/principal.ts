@@ -5,6 +5,7 @@ import {NavbarComponent} from "../navbar/navbar";
 import {Parceiros} from "../parceiros/parceiros";
 import {Services} from "../services/services";
 import {About} from '../about/about';
+import {Cta} from '../cta/cta';
 
 @Component({
   selector: 'app-principal',
@@ -14,7 +15,8 @@ import {About} from '../about/about';
     NavbarComponent,
     Parceiros,
     Services,
-    About
+    About,
+    Cta
   ],
   templateUrl: './principal.html',
   styleUrl: './principal.css',

@@ -1,0 +1,92 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    circle at center,
+    rgba(203, 110, 11, 0.28),
+    transparent 40%
+  ),
+  #161A1D;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-container {
+  padding: 80px 160px;
+  max-width: 63vw;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.4px);
+  -webkit-backdrop-filter: blur(10.4px);
+  border: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #b0b3c0;
+  margin-bottom: 40px;
+}
+
+.hero-button {
+  background: #ffffff;
+  color: #000;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+.badge {
+  background: #e0e0e0;
+  color: #000;
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-left: 6px;
+}
+
+.downloads-link {
+  display: block;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #888;
+  text-decoration: none;
+}
+
+.downloads-link:hover {
+  color: #fff;
+}
+
+/* 🔥 Responsivo */
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}

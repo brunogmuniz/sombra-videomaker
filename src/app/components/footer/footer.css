@@ -19,7 +19,7 @@
 }
 
 .footer__section h4 {
-  color: #ff8c00; /* destaque laranja igual do site */
+  color: #cb6e0b;
   margin-bottom: 15px;
   font-size: 1.2rem;
 }
@@ -41,7 +41,7 @@
 }
 
 .footer__list li::marker {
-  color: #ff8c00; /* bolinha laranja */
+  color: #cb6e0b;
 }
 
 .footer__socials {
@@ -56,14 +56,10 @@
 .footer__socials img {
   width: 28px;
   height: 28px;
-  filter: brightness(0) invert(1); /* ícones brancos para dark */
+  filter: brightness(0) invert(1);
   transition: transform 0.3s;
 }
 
-.footer__socials a:hover img {
-  transform: scale(1.1);
-  filter: brightness(0) invert(0.75) sepia(1) hue-rotate(10deg) saturate(5); /* efeito hover laranja */
-}
 
 .footer__bottom {
   text-align: center;
@@ -74,7 +70,7 @@
   font-size: 0.9rem;
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
   .footer__content {
     flex-direction: column;
