@@ -1,0 +1,28 @@
+<div class="video-card" (click)="playVideo()">
+
+
+  <ng-container *ngIf="!isActive; else videoPlayer">
+
+    <div class="card-number">
+      {{ number < 10 ? '0' + number : number }}
+    </div>
+
+    <div class="card-content">
+      <h3>{{ title }}</h3>
+      <br>
+      <img src="assets/playc.svg" style="width: 75px; height: 75px">
+    </div>
+
+  </ng-container>
+
+  <ng-template #videoPlayer>
+    <video
+      [src]="videoSrc"
+      autoplay
+      controls
+      playsinline
+      (ended)="onVideoEnd()">
+    </video>
+  </ng-template>
+
+</div>

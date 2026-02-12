@@ -1,0 +1,36 @@
+<section id="videos" >
+
+  <h2 class="videos__titulo" >ASSISTA ISSO AGORA<span style="color: #FF9F1C">!</span></h2>
+  <div class="videos__cards"  data-aos="zoom-in">
+
+      <app-video-card
+        [number]="1"
+        [videoSrc]="'assets/videos/apresentacao.mp4'"
+        [title]="'Apresentação'"
+        [isActive]="activeIndex === 0"
+        (play)="setActive(0)"
+        (ended)="resetActive()">
+      </app-video-card>
+
+      <app-video-card
+        [number]="2"
+        [videoSrc]="'assets/videos/paraVoce.mp4'"
+        [title]="'Para você'"
+        [isActive]="activeIndex === 1"
+        (play)="setActive(1)"
+        (ended)="resetActive()">
+      </app-video-card>
+
+      <app-video-card
+        [number]="3"
+        [videoSrc]="'assets/videos/resultadoFinal.mp4'"
+        [title]="'Resultado final'"
+        [isActive]="activeIndex === 2"
+        (play)="setActive(2)"
+        (ended)="resetActive()">
+      </app-video-card>
+
+    </div>
+
+
+</section>

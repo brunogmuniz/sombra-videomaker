@@ -1,0 +1,53 @@
+.video-card {
+  width: 350px;
+  background: linear-gradient(145deg, #1C2124, #161a1d);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.video-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.card-number {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #FF9F1C;
+  opacity: 0.8;
+  z-index: 2;
+}
+.card-content {
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #FF9F1C;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #cfcfcf;
+  line-height: 1.6;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+video {
+  width: 100%;
+  border-radius: 16px;
+}

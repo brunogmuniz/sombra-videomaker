@@ -1,0 +1,28 @@
+section#videos {
+  background-color: #161a1d;
+  color: white;
+  font-family: Tahoma, sans-serif;
+  padding: 80px 100px;
+  text-align: center;
+}
+
+
+.videos__titulo {
+  font-size: 48px;
+  color: #dedede;
+  margin-bottom: 10px;
+}
+
+.videos__subtitulo {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+.videos__cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}

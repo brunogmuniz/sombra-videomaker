@@ -6,6 +6,7 @@ import {Parceiros} from "../parceiros/parceiros";
 import {Services} from "../services/services";
 import {About} from '../about/about';
 import {Cta} from '../cta/cta';
+import {Videos} from '../videos/videos';
 
 @Component({
   selector: 'app-principal',
@@ -16,7 +17,8 @@ import {Cta} from '../cta/cta';
     Parceiros,
     Services,
     About,
-    Cta
+    Cta,
+    Videos
   ],
   templateUrl: './principal.html',
   styleUrl: './principal.css',
