@@ -17,6 +17,7 @@
 .hero-container {
   padding: 80px 160px;
   max-width: 63vw;
+  width: 100%;
   background: rgba(255, 255, 255, 0.04);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -49,6 +50,7 @@
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   transition: all 0.3s ease;
 }
@@ -79,14 +81,81 @@
   color: #fff;
 }
 
-/* 🔥 Responsivo */
+/* ============================= */
+/* 🔥 RESPONSIVO COMPLETO */
+/* ============================= */
 
+/* Desktop menor */
+@media (max-width: 1200px) {
+  .hero-container {
+    max-width: 80vw;
+    padding: 60px 80px;
+  }
+}
+
+/* Tablet landscape */
+@media (max-width: 992px) {
+  .hero-container {
+    max-width: 90vw;
+    padding: 60px 50px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Tablet */
 @media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-container {
+    padding: 50px 30px;
+    max-width: 95vw;
+  }
+
   .hero-title {
     font-size: 2rem;
   }
 
   .hero-subtitle {
     font-size: 1rem;
+  }
+
+  .hero-button {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero-container {
+    padding: 40px 20px;
+    border-radius: 12px;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  .hero-button {
+    font-size: 0.95rem;
+    border-radius: 30px;
+  }
+
+  .badge {
+    font-size: 0.65rem;
   }
 }

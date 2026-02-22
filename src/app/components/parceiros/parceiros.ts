@@ -28,11 +28,19 @@ export class Parceiros {
     },
     {
       nome: 'Christian Brum',
-      role: 'Especializado em criação de marcas e artes pra social media',
+      role: 'Especializado em criação de marcas e artes',
       rating: 5,
       imagem: 'assets/logo__cb.png',
       descricao: `O Sombra te da total liberdade de criar e se expressar nos conteúdos, mas quando a coisa começa a degringolar ele orienta na criação de conteúdo ajudando muito no meu crescimento`,
       link: 'https://www.instagram.com/sombra_videomaker/'
+    },
+    {
+      nome: 'Carina',
+      role: 'Cabeleireira',
+      rating: 5,
+      imagem: 'assets/logo_carina.png',
+      descricao: `Eu tenho muita dificuldade em falar e me expressar, e o sombra faz com que eu mostre meu trabalho de maneira muito mais tranquila, e fez eu me desenvolver melhor.`,
+      link: 'https://www.instagram.com/carina_mannnn/'
     },
 
   ];

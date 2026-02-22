@@ -51,3 +51,29 @@ video {
   width: 100%;
   border-radius: 16px;
 }
+
+@media (max-width: 992px) {
+  .video-card {
+    min-height: 500px;
+  }
+
+  .card-content p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .video-card {
+    min-height: 400px;
+    width: 250px;
+  }
+  .card-number {
+    font-size: 18px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .card-content h3 {
+    font-size: 24px;
+  }
+}
